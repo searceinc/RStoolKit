@@ -13,11 +13,11 @@ select * from table where id between 32 and 35;
 
 For this query, if your table has sort on the ID column, then it'll hit the block number 3 and retrieve the data. See the below image.
 
-![Tables without sort key](/src/img/Tables without sort key.png)
+![Tables without sort key](/src/img/Tables-without-sort-key.png)
 
 See the below image is an illustration of the same table without sort key. Now, if you run the same query it has to scan block 3,6 and 9 to retrieve the data. 
 
-![Tables without sort key](/src/img/Tables without sort key1.png)
+![Tables without sort key](/src/img/Tables-without-sort-key.png)
 
 ## Find the tables names without sort key
 
