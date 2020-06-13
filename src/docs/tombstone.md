@@ -4,9 +4,7 @@
 Tombstone blocks are generated when a WRITE transaction to an Amazon Redshift table occurs and there is a concurrent Read. Amazon Redshift keeps the blocks before the write operation to keep a concurrent Read operation consistent. Amazon Redshift blocks can’t be changed. Every Insert, Update or Delete action creates a new set of blocks, marking the old blocks as tombstoned. – *AWS Doc*
 
 > **Pro Tip**: Here is the more [detailed Blog post](https://thedataguy.in/redshift-tombstone-blocks-visual-explanation/) about the tombstone block with visual explanation. 
-
 ![](/src/img/RedShift-Tombstone-Blocks-a-visual-explanation6.JPG)
-
 ## Find the tombstone blocks for all the tables:
 
 ```sql
