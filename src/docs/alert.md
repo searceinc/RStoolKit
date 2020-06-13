@@ -1,4 +1,3 @@
-
 ## RStoolKit Results: Tables with high number of alerts
 
 RedShift will log the table names into STL_ALERT_EVENT_LOG tables when query optimizer identifies conditions that might indicate performance issues. This table is only visible to the super user. Use can see the following alerts.

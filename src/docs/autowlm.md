@@ -1,4 +1,3 @@
-
 ## RStoolKit Result: Auto WLM enabled
 
 When you enable the Auto WLM, then the concurrency slot and the memory allocation for a queue will be defined by RedShift itself. Its using some machine learning algorithm to predict the values for the queue. 

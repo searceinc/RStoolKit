@@ -1,4 +1,3 @@
-
 ## RStoolKit Result: Max concurrency for a slot
 
 RedShift has this hard limit of using the number of concurrency slots. It allow upto 50 concurrent queries within that 1 slot will be allocated to Super user queue. So totally 49 slots we'll get. If you are using Auto WLM then this concurrency will be taken care. But with manual WLM, we have allocate the right concurrency. 

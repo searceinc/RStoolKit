@@ -1,4 +1,3 @@
-
 ## RStoolKit Result: WLM commit queue wait
 
 This is nothing but its again the wait time during the commit. In most of the clusters, this doesn't have a much wait time. But still more wait time on commit is bad for your performance. It'll increase the overall execution time.
