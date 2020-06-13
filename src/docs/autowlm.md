@@ -11,7 +11,7 @@ It is an amazing feature to reduce the Admin workload. But still many of us thin
 
 You can find this in 2 methods. By default auto WLM is enabled while creating the Parameter group.  You can find this out on your RedShift console.
 
-![Auto%20WLM%2024b485ca3a694013972316f147e3992f/Untitled.png](Auto%20WLM%2024b485ca3a694013972316f147e3992f/Untitled.png)
+![/src/img/autowlm.png](/src/img/autowlm.png)
 
 The other way is from SQL:
 
