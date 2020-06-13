@@ -36,7 +36,7 @@ You can dynamically change the queue priority without any downtime. Lets see thi
 
 Here we know when the ETL, Report and maintenance will happen. So we can use lambda to change the queue priority. 
 
-[Untitled](https://www.notion.so/e8073b7bae9a44308d3e8a743dafc7e6)
+![/src/img/autowlm.png](/src/img/autowlm1.png)
 
  
 
