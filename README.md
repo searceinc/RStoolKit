@@ -1,1 +1,1 @@
-# RStool Kit - RedShift Health Check
+# RStoolKit - RedShift Health Check
