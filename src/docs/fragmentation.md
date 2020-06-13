@@ -3,7 +3,7 @@
 
 Fragmentation in RedShift is nothing but the Ghost rows and unsorted rows. Whenever we did a delete or update the old row will be marked as deleted. When we run the `VACUUM DELETE` then these rows will be permanently removed. But the space removed by the vacuum will be reclaimed, but its now fragmented. Until you run the `VACUUM SORT ONLY` or `VACUUM FULL` this space will not be defragmented. 
 
-![/assets/rskit/fragmentation.png](/assets/rskit/fragmentation.png)
+![/src/img/fragmentation.png](/src/img/fragmentation.png)
 
 ## Find tables with fragmentation:
 
