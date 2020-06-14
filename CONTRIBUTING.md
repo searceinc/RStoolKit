@@ -2,7 +2,7 @@
 
 First of all, welcome! We're excited that you'd like to contribute. How would you like to help?
 
-If you bored to read the full document, no worrires. Just follow the four points.
+If you bored to read the full document, no worrires. Just follow the five points.
 
 * We are open for any new Pull requests.
 * Please first have a discussion with the manitainers by creating an issue.
