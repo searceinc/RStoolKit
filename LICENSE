@@ -1,5 +1,7 @@
 MIT License
 
+Copyright for portions of WLM max connection hit and Tables with fragmentation are held by Amazon Web Serives as part of project amazon-redshift-utils and are provided under the Amazon Software License: https://github.com/awslabs/amazon-redshift-utils/blob/master/LICENSE.txt All other copyrights for RStoolKit are held by SearceInc, 2020 as described below.
+
 Copyright (c) 2020 searceinc
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
