@@ -60,7 +60,7 @@ We optimized this query as much as possible.
 
 ### SQL script:
 
-- You can just download the `[health-check.sql](https://raw.githubusercontent.com/searceinc/RStoolKit/master/health-check.sql)` script from this repo and run this on your favourite UI tool like pgAdmin, DBeaver or Aginity workbench.
+- You can just download the **[health-check.sql](https://raw.githubusercontent.com/searceinc/RStoolKit/master/health-check.sql)** script from this repo and run this on your favourite UI tool like pgAdmin, DBeaver or Aginity workbench.
 - If you are using command line tool `psql client` then you can import this via command line.
 
 ```bash
