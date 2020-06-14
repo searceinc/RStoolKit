@@ -4,7 +4,7 @@
 
 If you are managing a single node RedShift cluster or a big giant multi node cluster, you are responsible for the its performance. RedShift performance optimization starts from the table designing. We have an amazing RedShift Utilities repo where we can get a bunch of SQL queries to check the cluster's status. But unfortunately many times we may end up with many queries but the results are positive, no need to optimize anything. 
 
-The goal of this project is concentrate only on where is the bottleneck in your RedShift cluster and a complete health check recipe in one place. One it identified the issues in the cluster, you don't need to run somewhere to find the solutions for them. This utility will take you to the documentation page where you'll find the cause for this issue and how to solve them. Also these doc pages contains External links section where you can find scripts from other trusted repositions like AWS RedShift Utilities, AWS Blogs and some documentation to learn and fix the issue.
+The goal of this project is concentrate only on where is the bottleneck in your RedShift cluster and a complete health check recipe in one place. Once it identified the issues in the cluster, you don't need to run somewhere to find the solutions for them. This utility will take you to the documentation page where you'll find the cause for this issue and how to solve them. Also these doc pages contains External links section where you can find scripts from other trusted repositions like AWS RedShift Utilities, AWS Blogs and some documentation to learn and fix the issue.
 
 ## What we are checking in your cluster?
 
