@@ -131,7 +131,7 @@ Its an addition step for security. The function will work without this change, b
 
 ## License & Contributing:
 
-- `**RStooKit`** is free and open sourced under the [MIT license](https://github.com/searceinc/RStoolKit/blob/master/LICENSE).
+- **`RStooKit`** is free and open sourced under the [MIT license](https://github.com/searceinc/RStoolKit/blob/master/LICENSE).
 - We appreciate and happy to accept the pull requests from anyone. Read the [contributing guide](https://github.com/searceinc/RStoolKit/blob/master/CONTRIBUTING.md) before submit your pull request.
 
 
