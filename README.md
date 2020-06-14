@@ -14,7 +14,7 @@ The goal of this project is concentrate only on where is the bottleneck in your 
 4. **Vacuum** - Tables never performed vacuum, ghost rows, tombstone blocks and etc. 
 5. **Performance** - Disk based queries, High CPU queries and etc. 
 
-## List of checks and their priority:
+### List of checks and their priority:
 
 |Category   |Check ID|Findings                                                |Threshold-Red      |Threshold-Yellow      |Threshold-Green|
 |-----------|--------|--------------------------------------------------------|-------------------|----------------------|---------------|
