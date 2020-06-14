@@ -1,0 +1,136 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters: 
+  REDSHIFTendpoint: 
+      Type: String
+      Description: RedShift cluster endpoint(eg - searcecluster.ctjmrrq0ybmi.us-east-1.redshift.amazonaws.com)
+  REDSHIFTdatabase: 
+      Type: String
+      Default: dev
+      Description: RedShift database name to run the health check
+  REDSHIFTuser: 
+      Type: String
+      Default: awsuser
+      Description: Enter Redshift cluster username(admin user is recommended)
+  REDSHIFTpasswd: 
+      NoEcho: true
+      Type: String
+      Description: RedShift cluster password
+  REDSHIFTport: 
+      Type: String
+      Default: 5439
+      Description: Enter Redshift cluster port number(5439 is the default port)
+  SESregion:
+    Type: String
+    Default: us-east-1
+    AllowedValues: 
+        - us-east-1
+        - us-west-2
+        - ap-south-1
+        - ap-southeast-2
+        - ca-central-1
+        - eu-central-1
+        - eu-west-1
+        - eu-west-2
+        - sa-east-1
+    Description: Select the SES region
+  SESendpoint: 
+      Type: String
+      Default: email-smtp.us-east-1.amazonaws.com
+      AllowedValues: 
+         - email-smtp.us-east-1.amazonaws.com
+         - email-smtp.us-west-2.amazonaws.com
+         - email-smtp.ap-south-1.amazonaws.com
+         - email-smtp.ap-southeast-2.amazonaws.com
+         - email-smtp.ca-central-1.amazonaws.com
+         - email-smtp.eu-central-1.amazonaws.com
+         - email-smtp.eu-west-1.amazonaws.com
+         - email-smtp.eu-west-2.amazonaws.com
+         - email-smtp.sa-east-1.amazonaws.com
+      Description: select the SES endpoint based on your SES region
+  SESusername: 
+      NoEcho: true
+      Type: String
+      Description: AWS IAM user Access key for SES
+  SESpassword: 
+      NoEcho: true
+      Type: String
+      Description: AWS IAM user secret key for SES
+  SESsendermail: 
+      Type: String
+      Description: SES verified sender email
+  SESrecipient: 
+      Type: String
+      Description: Comma seperated email address(eg - recipient1@domain.com,recipient2@domain.com)
+  S3codebucket:
+      Type: String
+      Description: Select the S3 bucket where you have the function code
+  S3codekey:
+      Type: String
+      Description: Enter the path for the zip file (eg - /mycode/python3/code.zip)
+Description: RStoolKit
+Resources:
+  RStooKitLambdaIAMPolicy:
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+        - Effect: Allow
+          Action:
+          - logs:CreateLogGroup
+          - logs:CreateLogStream
+          - logs:PutLogEvents
+          - logs:CreateLogGroup
+          - logs:CreateLogStream
+          - logs:PutLogEvents
+          - ec2:CreateNetworkInterface
+          - ec2:DescribeNetworkInterfaces
+          - ec2:DeleteNetworkInterface
+          Resource: "*"
+  RStooKitLambdaExecutionRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - 'sts:AssumeRole'
+      Path: /
+      ManagedPolicyArns:
+        - !Ref RStooKitLambdaIAMPolicy           
+  RStoolKitFunction: 
+    Type: AWS::Lambda::Function
+    Properties: 
+      Handler: lambda_function.lambda_handler
+      Role:
+        Fn::GetAtt:
+        - RStooKitLambdaExecutionRole
+        - Arn
+      Code: 
+        S3Bucket: !Ref S3codebucket
+        S3Key: !Ref S3codekey
+      Runtime: python3.7
+      Timeout: 900
+      Environment:
+        Variables:
+          REDSHIFT_ENDPOINT: !Ref REDSHIFTendpoint
+          REDSHIFT_DATABASE: !Ref REDSHIFTdatabase
+          REDSHIFT_USER: !Ref REDSHIFTuser
+          REDSHIFT_PASSWD: !Ref REDSHIFTpasswd
+          REDSHIFT_PORT: !Ref REDSHIFTport
+          SES_REGION: !Ref SESregion
+          SES_ENDPOINT: !Ref SESendpoint
+          SES_USERNAME: !Ref SESusername
+          SES_PASSWORD: !Ref SESpassword
+          SES_SENDER_EMAIL: !Ref SESsendermail
+          SES_RECIPIENT: !Ref SESrecipient
+      VpcConfig: 
+        SecurityGroupIds: 
+          - sg-639a8b2b
+        SubnetIds: 
+          - subnet-7751ec3d 
+          - subnet-91da33cd
