@@ -6,7 +6,7 @@ If you are managing a single node RedShift cluster or a big giant multi node clu
 
 The goal of this project is concentrate only on where is the bottleneck in your RedShift cluster and a complete health check recipe in one place. Once it identified the issues in the cluster, you don't need to run somewhere to find the solutions for them. This utility will take you to the documentation page where you'll find the cause for this issue and how to solve them. Also these doc pages contains External links section where you can find scripts from other trusted repositions like AWS RedShift Utilities, AWS Blogs and some documentation to learn and fix the issue.
 
-## What we are checking in your cluster?
+## :pencil: What we are checking in your cluster?
 
 1. **Design** - Find the wrong distribution and sort keys, compression issues and etc. 
 2. **Table** - Table related issues like without sort key, unused tables and etc.
