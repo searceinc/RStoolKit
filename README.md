@@ -156,7 +156,7 @@ The above list is prepared if SES is offically supported. If you want to use thi
 
 - **`RStooKit`** is free and open sourced under the [MIT license](https://github.com/searceinc/RStoolKit/blob/master/LICENSE).
 - We appreciate and happy to accept the pull requests from anyone. Read the [contributing guide](https://github.com/searceinc/RStoolKit/blob/master/CONTRIBUTING.md) before submit your pull request.
-
+- If you want add your query or modify something on the documentation page, feel free to get the documents under the `/src/doc/`.
 
 
 
