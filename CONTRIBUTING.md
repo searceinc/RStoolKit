@@ -2,13 +2,23 @@
 
 First of all, welcome! We're excited that you'd like to contribute. How would you like to help?
 
+If you bored to read the full document, no worrires. Just follow the four points.
+
+* We are open for any new Pull requests.
+* Please first have a discussion with the manitainers by creating an issue.
+* The maintainers may not have the enough repsource to review all of your issues/comments/pull requests. Please undestand and wait for sometime.
+* Please make sure your new pull request will not break anything.
+* All the contributions are must be licensed under the [MIT license](https://github.com/searceinc/RStoolKit/blob/master/LICENSE)
+
+## How to contribute:
+
 * [Report a bug](#how-to-report-bugs)
 * [Raise a feature request](#how-to-request-features)
 * [Build a new feature myself](#how-to-build-features-yourself)
 
 ## How to Report Bugs
 
-If you found any issues/bug in this, we encorge your to report to us. But before reporting the bug, please go through the [issues](https://github.com/searceinc/RStoolKit/issues) section. May be someone already reported that issue. You can refer the closed issues(https://github.com/searceinc/RStoolKit/issues?q=is%3Aissue+is%3Aclosed) section as well.
+If you found any issues/bug in this, we encorge your to report to us. But before reporting the bug, please go through the [issues](https://github.com/searceinc/RStoolKit/issues) section. May be someone already reported that issue. You can refer the [closed issues](https://github.com/searceinc/RStoolKit/issues?q=is%3Aissue+is%3Aclosed) section as well.
 
 If nothing is reported before, then please create a new issue and include as much details as you can - what you're seeing now, and what you'd expect to see instead.
 
@@ -22,7 +32,7 @@ And good news! Lots of people have contributed their code over time. Here's how 
 
 ## How to Build Features Yourself
 
-When you're ready to start coding, discuss it with the community. Check the [Github issues list] and the [closed issues list] because folks may have tried it in the past, or the community may have decided it's not a good fit for these tools. (Classic example - sp_Blitz isn't a security auditing tool.)
+When you're ready to start coding, discuss it with the community. Check the [Github issues list] and the [closed issues list] because folks may have tried it in the past, or the community may have decided it's not a good fit for these tools.
 
 If you can't find it in an existing issue, open a new Github issue for it. Outline what you'd like to do, why you'd like to do it, and optionally, how you'd think about coding it. This just helps make sure other users agree that it's a good idea to add to these tools. Other folks will respond to the idea, and if you get a warm reception, go for it!
 
