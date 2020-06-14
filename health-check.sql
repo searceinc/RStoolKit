@@ -1,6 +1,6 @@
 -- RedShift HealthCheck ToolKit
 -- Version 1.0
--- Developed by Bhuvanesh (@bhuvithedataguy)
+-- Developed by Searce Data team
 -- Updates: https://thedataguy.in/
 
 -- Disable cache for this session
@@ -1373,3 +1373,16 @@ END AS priority
  WHERE  checkid = 28) sq 
 WHERE  rstk_metric_result.checkid = sq.checkid; 
 
+-- Show the result:
+SELECT CASE 
+         WHEN priority = 1 THEN 10 
+         WHEN priority = 2 THEN 50 
+         WHEN priority = 3 THEN 200 
+         ELSE 0 
+       END AS priority, 
+       category, 
+       finding, 
+       details, 
+       url 
+FROM   rstk_metric_result 
+ORDER  BY priority; 
