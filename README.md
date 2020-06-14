@@ -124,6 +124,17 @@ Its an addition step for security. The function will work without this change, b
 
 
 ### Deploy this Stack:
+|Region  | URL (Click the Launch stack icon)|
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------|
+|US East (N. Virginia)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+|US West (Oregon)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+|Asia Pacific (Mumbai)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+|Asia Pacific (Sydney)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+|Canada (Central)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+|Europe (Frankfurt)             |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+|Europe (Ireland)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+|Europe (London)                |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+|South America (São Paulo)      |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=sa-east-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
 
 ### Sample Report:
 
