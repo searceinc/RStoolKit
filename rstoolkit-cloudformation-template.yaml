@@ -67,6 +67,12 @@ Parameters:
   S3codekey:
       Type: String
       Description: Enter the path for the zip file (eg - /mycode/python3/code.zip)
+  lambdaSecurityGroup:
+      Type: List<AWS::EC2::SecurityGroup::Id>
+      Description: Select the SecurityGroup id for Lambda function.
+  lambdaSubnetIds:
+      Type: List<AWS::EC2::Subnet::Id>
+      Description: Select the subnet group ids for Lambda function. Make sure the subnet AZ should support the SES endpoint.
 Description: RStoolKit
 Resources:
   RStooKitLambdaIAMPolicy:
@@ -129,8 +135,5 @@ Resources:
           SES_SENDER_EMAIL: !Ref SESsendermail
           SES_RECIPIENT: !Ref SESrecipient
       VpcConfig: 
-        SecurityGroupIds: 
-          - sg-639a8b2b
-        SubnetIds: 
-          - subnet-7751ec3d 
-          - subnet-91da33cd
+        SecurityGroupIds: !Ref lambdaSecurityGroup
+        SubnetIds: !Ref lambdaSubnetIds
