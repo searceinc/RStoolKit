@@ -2,9 +2,9 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/searceinc/RStoolKit/commits/master)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/searceinc/RStoolKit/blob/master/LICENSE)
 
-If you are managing a single node RedShift cluster or a big giant multi node cluster, you are responsible for the its performance. RedShift performance optimization starts from the table designing. We have an amazing RedShift Utilities repo where we can get a bunch of SQL queries to check the cluster's status. But unfortunately many times we may end up with many queries but the results are positive, no need to optimize anything. 
+If you are managing a single node Redshift cluster or a big giant multi node cluster, you are responsible for its performance. RedShift performance optimization starts from the table designing. We have an amazing RedShift Utility repo where we can get a bunch of SQL queries to check the cluster's status. But unfortunately many times we may end up with many queries but the results are positive, no need to optimize anything.
 
-The goal of this project is concentrate only on where is the bottleneck in your RedShift cluster and a complete health check recipe in one place. Once it identified the issues in the cluster, you don't need to run somewhere to find the solutions for them. This utility will take you to the documentation page where you'll find the cause for this issue and how to solve them. Also these doc pages contains External links section where you can find scripts from other trusted repositions like AWS RedShift Utilities, AWS Blogs and some documentation to learn and fix the issue.
+The goal of this project is to concentrate only on where is the bottleneck in your RedShift cluster and a complete health check recipe in one place. Once it identified the issues in the cluster, you don't need to run somewhere to find the solutions for them. This utility will take you to the documentation page where you'll find the cause for this issue and how to solve them. Also, these doc pages contain External links section where you can find scripts from other trusted repositions like AWS RedShift Utilities, AWS Blogs, and some documentation to learn and fix the issue.
 
 ## :loudspeaker: What we are checking in your cluster?
 
@@ -52,9 +52,9 @@ The goal of this project is concentrate only on where is the bottleneck in your 
 
 We optimized this query as much as possible. 
 
-- We recommend to run this on your non peak hours.
+- We recommend running this on your non peak hours.
 - If you have a single node cluster, then keep an eye on CPU (but it'll not go more than 50% or 60%).
-- If your cluster is launched within 3 days(new cluster or if you did elastic resize), then the system tables may not have enough data to find out the bottleneck. So at least 3 days data is recommend on STL, SVV tables to run this script.
+- If your cluster is launched within 3 days(new cluster or if you did elastic resize), then the system tables may not have enough data to find out the bottleneck. So at least 3 days data is recommended on STL, SVV tables to run this script.
 
 ## Run the Health Check:
 
@@ -74,7 +74,7 @@ psql -h redshift-endpoint -U user -p 5439 -d db_name < health-check.sql
 
 ## Scheduled Report via Lambda:
 
-If you want run this health check on every week or some particular frequency, you can use AWS Lambda to run this health check and send the report over the email with SES. We have created a **CloudFormation** template to create this lambda function. RedShift and SES details can be passed through the Lambda environment variables. Please follow the below instructions to deploy this.
+If you want to run this health check every week or some particular frequency, you can use AWS Lambda to run this health check and send the report over the email with SES. We have created a CloudFormation template to create this lambda function. RedShift and SES details can be passed through the Lambda environment variables. Please follow the below instructions to deploy this.
 
 ### Changes in RedShift:
 
