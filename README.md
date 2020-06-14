@@ -127,7 +127,7 @@ Its an addition step for security. The function will work without this change, b
 
 ### Sample Report:
 
-![/src/img/lambda-report.jpg](/src/img/lambda-report.jpg)
+![/src/img/lambda-result.jpg](/src/img/lambda-result.jpg)
 
 ## License & Contributing:
 
