@@ -16,7 +16,7 @@ The goal of this project is concentrate only on where is the bottleneck in your 
 
 ### List of checks and their priority:
 
-|Category   |Check ID|Findings                                                |Threshold-Red      |Threshold-Yellow      |Threshold-Green|
+|Category   |Check ID|Findings                                                |Threshold-Red :rotating_light:      |Threshold-Yellow:question:      |Threshold-Green:+1:|
 |-----------|--------|--------------------------------------------------------|-------------------|----------------------|---------------|
 |Design     |1       |Tables without sort keys                                |Greater than 10    |Between 1 to 10       |0              |
 |Design     |2       |Sort key column compressed                              |Greater than 10    |Between 1 to 10       |0              |
