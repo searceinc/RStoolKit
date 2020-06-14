@@ -126,15 +126,15 @@ Its an addition step for security. The function will work without this change, b
 ### Deploy this Stack (Regions where SES is supported):
 |Region  | URL (Click the Launch stack icon)|
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|US East (N. Virginia)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
-|US West (Oregon)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
-|Asia Pacific (Mumbai)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
-|Asia Pacific (Sydney)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
-|Canada (Central)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
-|Europe (Frankfurt)             |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
-|Europe (Ireland)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
-|Europe (London)                |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
-|South America (São Paulo)      |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=sa-east-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+|US East (N. Virginia)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml){:target="_blank"}|
+|US West (Oregon)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml){:target="_blank"}|
+|Asia Pacific (Mumbai)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml){:target="_blank"}|
+|Asia Pacific (Sydney)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml){:target="_blank"}|
+|Canada (Central)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml){:target="_blank"}|
+|Europe (Frankfurt)             |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml){:target="_blank"}|
+|Europe (Ireland)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml){:target="_blank"}|
+|Europe (London)                |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml){:target="_blank"}|
+|South America (São Paulo)      |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=sa-east-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml){:target="_blank"}|
 
 ### Manual Deployment (If your region is not listed on the above list)
 
@@ -146,7 +146,7 @@ The above list is prepared if SES is offically supported. If you want to use thi
 	* Create or choose any exsiting subnets to use this NAT gateway.
 	* While launching the CF template select the subnet that has NAT gate way.
 * [Download](https://github.com/searceinc/RStoolKit/blob/master/rstoolkit-lambda-function.zip) the Lambda code
-* [Download](https://github.com/searceinc/RStoolKit/blob/master/rstoolkit-cloudformation-template.yaml) CloudFormation template
+* [Download](https://github.com/searceinc/RStoolKit/blob/master/rstoolkit-cloudformation-template.yaml){:target="_blank"} CloudFormation template
 
 ### Sample Report:
 
