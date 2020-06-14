@@ -123,7 +123,7 @@ Its an addition step for security. The function will work without this change, b
 |lambdaSubnetIds    |Subnets for the Lambda        |
 
 
-### Deploy this Stack:
+### Deploy this Stack (Regions where SES is supported):
 |Region  | URL (Click the Launch stack icon)|
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------|
 |US East (N. Virginia)          |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
@@ -135,6 +135,18 @@ Its an addition step for security. The function will work without this change, b
 |Europe (Ireland)               |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
 |Europe (London)                |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
 |South America (São Paulo)      |[![](/src/img/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=sa-east-1#/stacks/new?stackName=myteststack&templateURL=https://searce-opensource.s3.amazonaws.com/rstoolkit-cf-template/rstoolkit-cloudformation-template.yaml)|
+
+### Manual Deployment (If your region is not listed on the above list)
+
+The above list is prepared if SES is offically supported. If you want to use this lambda function, still you can deploy it on the other regions, but you need to take care of the Email part from the lambda code. (Still we didn't test this option)
+
+* Or use SES in another region.
+	* Create a SES user on any supported region, and verify an email address.
+	* Create NAT gateway and attach it to a new route table.
+	* Create or choose any exsiting subnets to use this NAT gateway.
+	* While launching the CF template select the subnet that has NAT gate way.
+* [Download](https://github.com/searceinc/RStoolKit/blob/master/rstoolkit-lambda-function.zip) the Lambda code
+* [Download](https://github.com/searceinc/RStoolKit/blob/master/rstoolkit-cloudformation-template.yaml) CloudFormation template
 
 ### Sample Report:
 
