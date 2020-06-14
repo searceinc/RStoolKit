@@ -70,7 +70,7 @@ psql -h redshift-endpoint -U user -p 5439 -d db_name < health-check.sql
 
 ### Sample Report:
 
-![](/src/img/sql-report.jpg)
+![/src/img/sql-result.jpg](/src/img/sql-result.jpg)
 
 ## Scheduled Report via Lambda:
 
@@ -127,7 +127,7 @@ Its an addition step for security. The function will work without this change, b
 
 ### Sample Report:
 
-![](/src/img/lambda-report.jpg)
+![/src/img/lambda-report.jpg](/src/img/lambda-report.jpg)
 
 ## License & Contributing:
 
