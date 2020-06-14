@@ -54,7 +54,7 @@ We optimized this query as much as possible.
 
 - We recommend running this on your non peak hours.
 - If you have a single node cluster, then keep an eye on CPU (but it'll not go more than 50% or 60%).
-- If your cluster is launched within 3 days(new cluster or if you did elastic resize), then the system tables may not have enough data to find out the bottleneck. So at least 3 days data is recommended on STL, SVV tables to run this script.
+- If your cluster is launched within 3 days(new cluster or if you did elastic resize), then the system tables may not have enough data to find out the bottleneck. So at least 3 days of data is recommended on STL, SVV tables to run this script.
 
 ## Run the Health Check:
 
@@ -138,7 +138,7 @@ Its an addition step for security. The function will work without this change, b
 
 ### Manual Deployment (If your region is not listed on the above list)
 
-The above list is prepared if SES is offically supported. If you want to use this lambda function, still you can deploy it on the other regions, but you need to take care of the Email part from the lambda code. (Still we didn't test this option)
+The above list is prepared if SES is officially supported. If you want to use this lambda function, still you can deploy it on the other regions, but you need to take care of the Email part from the lambda code. (Still, we didn't test this option)
 
 * Or use SES in another region.
 	* Create a SES user on any supported region, and verify an email address.
