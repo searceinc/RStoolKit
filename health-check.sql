@@ -1375,10 +1375,11 @@ WHERE  rstk_metric_result.checkid = sq.checkid;
 
 -- Show the result:
 SELECT CASE 
+         WHEN priority = 0 THEN 0 
          WHEN priority = 1 THEN 10 
          WHEN priority = 2 THEN 50 
          WHEN priority = 3 THEN 200 
-         ELSE 0 
+         ELSE 1000 
        END AS priority, 
        category, 
        finding, 
