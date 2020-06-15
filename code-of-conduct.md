@@ -4,11 +4,11 @@
 
 * [Report a bug](#how-to-report-bugs)
 * [Raise a feature request](#how-to-request-features)
-* [Build a new feature myself](#how-to-build-features-yourself)
+* [Build a new feature yourself](#how-to-build-features-yourself)
 
 ## How to Report Bugs
 
-If you found any issues/bug in this, we encorge your to report to us. But before reporting the bug, please go through the [issues](https://github.com/searceinc/RStoolKit/issues) section. May be someone already reported that issue. You can refer the [closed issues](https://github.com/searceinc/RStoolKit/issues?q=is%3Aissue+is%3Aclosed) section as well.
+If you find any issues/bug in this, we encorge your to report to us. But before reporting the bug, please go through the [issues](https://github.com/searceinc/RStoolKit/issues) section. Someone might have already reported that issue. You can refer the [closed issues](https://github.com/searceinc/RStoolKit/issues?q=is%3Aissue+is%3Aclosed) section as well.
 
 If nothing is reported before, then please create a new issue and include as much details as you can - what you're seeing now, and what you'd expect to see instead.
 

@@ -705,7 +705,7 @@ FROM   (SELECT checkid,
                  WHEN Cast(value AS INT) > 0 THEN 'There are ' 
                                                   || value 
                                                   || 
-' tables are does not have sort keys. This will endup with scaning all the blocks' 
+' tables without sortkeys. This will result in scanning of all blocks for even range restricted predicates' 
   ELSE 'Awesome, all of your tables having sort keys!!!' 
 END AS details, 
 CASE 
@@ -766,7 +766,7 @@ FROM   (SELECT checkid,
                CASE 
                  WHEN Cast(value AS INT) > 0 THEN value 
                                                   || 
-' tables are having skew in termns of distribution. This will lead to put more load on few nodes and pile the soon on few nodes. Consider changing the dist key if required'
+' tables have skew in termns of distribution. This will result in more load on few nodes. Consider changing the dist key if required'
   ELSE 'Seems the table distribution looks good' 
 END AS details, 
 CASE 
@@ -786,7 +786,7 @@ FROM   (SELECT checkid,
                CASE 
                  WHEN Cast(value AS INT) > 0 THEN value 
                                                   || 
-               ' tables are not compressed yet, this is not at all a good practice, please compress all the column except sort key' 
+               ' tables are not compressed yet, this is not a good practice and needs to be fixed immediately, please compress all the columns except the sort key' 
                  ELSE 'Good Job!!! All the tables are compressed' 
                END AS details, 
                CASE 
@@ -809,7 +809,7 @@ FROM   (SELECT checkid,
                                                     || 
                ' seconds. You have to tune your WLM to reduce the wait time.' 
                  WHEN Cast(value AS INT) < 180 THEN 
-'We found that the wait time is less than 180  second ('||value||') which is Good. But still consider to tune WLM if need.'
+'We found that the wait time is less than 180  second ('||value||') which is Good. But still consider tuning WLM if need.'
 ELSE 'Unknown -  - Your system tables may not have enough data'
 END AS details, 
 CASE 
@@ -831,7 +831,7 @@ FROM   (SELECT checkid,
                  ' This cluster hits ' 
                  || value 
                  || 
-' as the high number of connections recently. RedShift support 500 as the max connection, so please tune your WLM setting to reduce the wait time and boost the queries.'
+' as the high number of connections recently. RedShift supports 500 max connections, so please tune your WLM setting to reduce the wait time and boost the queries.'
   WHEN Cast(value AS INT) < 100 THEN 
 'Great!!! This cluster never reach 100 connections (only '||value||') at any point of time, But to speed up concurrent queries in a queue, you may tune the WLM settings.'
   ELSE 'Unknown -  - Your system tables may not have enough data' 
@@ -852,7 +852,7 @@ SET    details = sq.details,
 FROM   (SELECT checkid, 
                CASE 
                  WHEN Cast(value AS INT) = 1 THEN 
-' You are using Default queue only, its a Red Flag. At least keep minimum 2 Queue to balance the workload'
+' You are using Default queue only, its a Red Flag. At least keep minimum 2 Queues to balance the workload'
   WHEN Cast(value AS INT)BETWEEN 2 AND 3 THEN 'OK! you have ' 
                                               || value 
                                               || 
